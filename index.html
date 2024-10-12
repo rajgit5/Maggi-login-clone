@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maggi Login</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      * {
+        margin: 0;
+      }
+      .condiv {
+        display: flex;
+        justify-content: space-between;
+      }
+      .first {
+        width: 8%;
+        height: auto;
+        background: whitesmoke;
+        box-shadow: 0px 0px 0px rgb(0, 0, 0, 1);
+        text-align: center;
+      }
+      .second {
+        width: 46%;
+        height: auto;
+        background: #fcfcfc;
+        padding: 50px;
+      }
+      .second-h1 {
+        font-weight: bold;
+        font-size: 49px;
+        margin-left: 20px;
+      }
+      .second-span {
+        font-weight: bold;
+        font-size: 38px;
+        margin-left: 20px;
+
+      }
+      .third {
+        width: 46%;
+        height: auto;
+        background: #fcfcfc;
+        /* border-left: 1px solid gray; */
+      }
+
+      .signinfab{
+        background: rgb(74, 74, 238);
+        margin: 20px;
+        color: white;
+        font-weight: bold;
+        padding: 10px 30px 10px 5px;
+      }
+      .signingoo{
+        padding: 10px 30px 10px 5px;
+        background: white;
+        margin: 20px;
+
+        color: black;
+        font-weight: bold;
+        border: 1px solid rgb(191, 191, 196);
+      }
+      .signdiv{
+        text-align: left;
+        margin-top: 45px;
+      }
+      .input-div{
+        margin-top: 50px;
+        margin-left: 20px;
+      }
+      .input{
+        padding: 15px 80px 15px 10px;
+      }
+      .log-btn{
+        padding: 15px 15px;
+        margin-top: 20px;
+        text-align: center;
+        width: 310px;
+        font-weight: bold;
+        font-size: 20px;
+        background: rgb(192, 189, 189);
+        outline: none;
+        color: white;
+        border: none;
+        
+      }
+      .signup-btn{
+        padding: 15px 15px;
+        margin-top: 20px;
+        text-align: center;
+        width: 310px;
+        font-weight: bold;
+        font-size: 20px;
+        background: rgb(49, 49, 49);
+        outline: none;
+        color: white;
+        border: none;
+        
+      }
+      .forg-inst{
+        margin-left: 20%;
+        margin-top: 20px;
+        width: 200px;
+        text-align: center;
+      }
+      .third-inside{
+        padding: 15% 20%;
+        margin-top: 30px;
+      }
+      .third-h1{
+        font-size: 35px;
+      }
+      .join{
+        margin-top: 30px;
+        margin-bottom: 40px;
+      }
+      .p-des{
+        font-size: 20px;
+        margin-left: 25px;
+      }
+      #correct{
+        color: #6DAC1B;
+      }
+      .hrofmiddle{
+width: 1px;
+background: gray;
+margin-top: 110px;
+height: 550px;
+      }
+      #icon{
+        margin-top: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- condiv -->
+    <div class="condiv">
+      <div class="first">
+        <img class="logo" src="logo.png" alt="">
+        <br><br>
+        <svg id="icon" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-egg-fried" viewBox="0 0 16 16">
+          <path d="M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+          <path d="M13.997 5.17a5 5 0 0 0-8.101-4.09A5 5 0 0 0 1.28 9.342a5 5 0 0 0 8.336 5.109 3.5 3.5 0 0 0 5.201-4.065 3.001 3.001 0 0 0-.822-5.216zm-1-.034a1 1 0 0 0 .668.977 2.001 2.001 0 0 1 .547 3.478 1 1 0 0 0-.341 1.113 2.5 2.5 0 0 1-3.715 2.905 1 1 0 0 0-1.262.152 4 4 0 0 1-6.67-4.087 1 1 0 0 0-.2-1 4 4 0 0 1 3.693-6.61 1 1 0 0 0 .8-.2 4 4 0 0 1 6.48 3.273z"/>
+        </svg><br>
+        <span>Recipes</span>
+        <br>
+        <svg id="icon" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-menu-button-wide-fill" viewBox="0 0 16 16">
+          <path d="M1.5 0A1.5 1.5 0 0 0 0 1.5v2A1.5 1.5 0 0 0 1.5 5h13A1.5 1.5 0 0 0 16 3.5v-2A1.5 1.5 0 0 0 14.5 0zm1 2h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1 0-1m9.927.427A.25.25 0 0 1 12.604 2h.792a.25.25 0 0 1 .177.427l-.396.396a.25.25 0 0 1-.354 0zM0 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm1 3v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2zm14-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2zM2 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5"/>
+        </svg><br>
+        <span>My Menu Plan</span><br>
+
+        <svg id="icon" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+        </svg>
+<br>
+<span>Search</span><br>
+        <svg id="icon" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+          <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+        </svg><br>
+      <span>Login</span>
+      </div>
+      <div class="second">
+        <h1 class="second-h1">My Maggi</h1>
+        <span class="second-span">Welcome back!</span>
+        <div class="signdiv">
+          <span class="signinfab"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+          </svg> | Sign in with facebook</span><br><br><br>
+          <span class="signingoo"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
+            <path d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z"/>
+          </svg> | Sign in with Google</span>
+        </div>
+        <div class="input-div">
+          <span>E-mail</span><br>
+          <input class="input" type="email" placeholder="Enter your e-mail address here*"><br><br>
+          <span>Password</span><br>
+          <input class="input" type="password" placeholder="Enter your password here*"><br>
+          <button class="log-btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+            <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+          </svg> Login via e-mail</button><br>
+          <div class="forg-inst">          <span class="">Forgot your password?
+          </span><hr></div>
+        </div>
+      </div>
+<div class="hrofmiddle"></div>
+      <div class="third">
+        <div class="third-inside">
+          <h1 class="third-h1">Not registered yet?</h1>
+          <button class="signup-btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+            <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+          </svg> Register</button>
+          <br>
+          <h3 class="join">Join Maggi today!</h3>
+          <!-- svg -->
+          <svg id="correct" xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+          </svg>
+          <!-- svg -->
+          <p class="p-des">Your personal newsletter with exciting recipes and ideas </p>
+          <!-- svg -->
+          <svg id="correct" xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+          </svg>
+          <!-- svg -->
+          <p class="p-des">Personalize your newsletter to your preferences</p>
+          <!-- svg -->
+          <svg id="correct" xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+          </svg>
+          <!-- svg -->
+          <p class="p-des">Get to know about Maggi products</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
